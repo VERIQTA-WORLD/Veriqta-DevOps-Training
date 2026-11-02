@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/readme-banner.svg" alt="VERIQTA DevOps Training. Build systems. Understand failures. Learn by doing." width="640">
+  <img src="assets/readme-banner.svg" alt="VERIQTA DevOps Training. Build. Deploy. Troubleshoot." width="600">
 </p>
 
 # VERIQTA DevOps Training
