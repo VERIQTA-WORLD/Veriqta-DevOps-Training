@@ -4,32 +4,15 @@
 
 # VERIQTA DevOps Training
 
-Learn DevOps from the beginning by building, operating, and troubleshooting a real lab system.
+A practical DevOps curriculum covering Linux, networking, automation, cloud infrastructure, software delivery, Kubernetes, observability, and security.
 
-Start with **01 Linux**. Open **Day 01**, read its notes, and follow the lab. Complete the projects and assessment before moving to Day 02. Finish Linux before progressing to Networking, then follow the numbered tools in order.
+Develop your engineering skills through hands-on labs, portfolio projects, troubleshooting, and independent assessments. Connect individual tools through the systems you build and operate.
 
-[Start Day 01](01%20Linux/Day%2001/README.md) · [Full roadmap](ROADMAP.md)
+[Curriculum roadmap](ROADMAP.md)
 
-## Find your lessons
+## Curriculum
 
-Each tool has its own folder at the root. Each tool contains its days directly. There is no module folder and no week folder.
-
-| Inside a day | What you do |
-| --- | --- |
-| 01 Notes | Learn the concepts, examples, and commands. |
-| 02 Follow Along Lab | Build step by step and verify your results. |
-| 03 Portfolio Projects | Apply the lesson in a small project you can explain. |
-| 04 Knowledge Checks | Check your understanding and review explained answers. |
-| 05 Practical Assessment | Complete an independent task with clear pass criteria. |
-| 06 Troubleshooting | Investigate errors and verify the fix. |
-| 07 Images | View the teaching diagrams and their text explanations. |
-| 08 Evidence | Check what to retain and how to share it safely. |
-
-You can study directly from this repository. Every day includes the prerequisites, explanations, commands, expected results, and checks you need. Your private work stays on your own computer.
-
-## Tools in order
-
-| Tool | Intended outcome |
+| Tool | Practical focus |
 | --- | --- |
 | [01 Linux](01%20Linux/README.md) | Inspect, operate, troubleshoot, and recover a Linux service. |
 | [02 Networking](02%20Networking/README.md) | Trace and diagnose an application request across a network. |
@@ -52,14 +35,26 @@ You can study directly from this repository. Every day includes the prerequisite
 | [19 Argo CD and GitOps](19%20Argo%20CD%20and%20GitOps/README.md) | Deliver reviewed desired state and recover from drift. |
 | [20 Security and DevSecOps](20%20Security%20and%20DevSecOps/README.md) | Review and harden the complete platform with evidence. |
 
-## Your learning approach
+## Learning resources
 
-Plan around 60 minutes per learning session. Read, build, verify, explain, and document. If a task takes longer, record where you stopped and resume there. Day numbers restart within each tool and represent lessons, not calendar deadlines.
+Lessons are organized by tool and day, with notes, follow-along labs, portfolio projects, knowledge checks, practical assessments, troubleshooting, images, and evidence guidance.
 
-You will evolve one fictional learning-platform application across the tools. Each day's project instructions explain the current contribution and where to save your work. You will also complete smaller independent portfolio tasks. All project instructions, files, diagrams, references, and evidence guidance live inside the relevant tool and day.
+The curriculum emphasizes:
 
-Day 01 is available for review and study. Later days are planned and will be added as complete lessons, rather than empty day folders. Future tool folders contain their intended daily curriculum, not a claim that those lessons have already been written.
+- Understanding commands, configurations, and architectural decisions.
+- Building systems and verifying their behavior.
+- Diagnosing failures from logs, metrics, and other evidence.
+- Applying security, reliability, recovery, and cost awareness.
+- Documenting technical work clearly and reproducibly.
 
-The course develops practical engineering skills and increasingly independent judgment. Professional seniority also grows through real responsibility and operating experience.
+## Practical engineering
 
-Copyright 2026 VERIQTA LIMITED. No open-source license has been selected. Public access does not itself grant permission to redistribute or relicense the material.
+Use a fictional learning-platform application to connect infrastructure, automation, delivery, and operations. Develop portfolio work around service management, cloud deployment, CI/CD, infrastructure as code, container orchestration, monitoring, and incident investigation.
+
+Build the judgment to explain tradeoffs, make controlled changes, verify recovery, and communicate technical decisions.
+
+## Community
+
+For questions and corrections, see [Contributing](CONTRIBUTING.md). For sensitive concerns, see [Security](SECURITY.md).
+
+Copyright 2026 VERIQTA LIMITED.
