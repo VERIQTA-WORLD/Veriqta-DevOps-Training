@@ -4,7 +4,7 @@
 
 Before you install an application, you need to identify where it will run, which account you are using, and where its files belong. Today you inspect your Linux environment and save a starting record you can verify and reopen.
 
-Your outcome is a real saved baseline, not a deployed service. Allow around 45 to 60 minutes; environment setup can take longer.
+Your outcome is a real saved baseline, not a deployed service. Allow around 45 to 60 minutes for the notes and guided lab. Complete the portfolio projects in separate sessions, then take the 40-minute practical assessment. Environment setup is additional.
 
 ## Study in this order
 
@@ -14,7 +14,7 @@ Your outcome is a real saved baseline, not a deployed service. Allow around 45 t
 | [02 Follow Along Lab](02%20Follow%20Along%20Lab/README.md) | Inspect Linux, create your private workspace, write a baseline, and verify it. |
 | [03 Portfolio Projects](03%20Portfolio%20Projects/README.md) | Produce a system baseline and an environment handover record. |
 | [04 Knowledge Checks](04%20Knowledge%20Checks/README.md) | Test your reasoning, then review explained answers. |
-| [05 Practical Assessment](05%20Practical%20Assessment/README.md) | Complete an independent task with observable pass criteria. |
+| [05 Practical Assessment](05%20Practical%20Assessment/README.md) | Complete a timed live lab with a faulty report, a path incident, and scored verification. |
 | [06 Troubleshooting](06%20Troubleshooting/README.md) | Use symptoms and evidence to resolve problems. |
 | [07 Images](07%20Images/README.md) | Review the teaching diagrams and their text equivalents. |
 | [08 Evidence](08%20Evidence/README.md) | Check what to retain, label, and redact. |

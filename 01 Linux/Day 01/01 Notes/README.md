@@ -1,120 +1,352 @@
 # Linux, Day 01 notes
 
-## Your lab environment
+## 1. Your lab environment
 
-Open a terminal in a personal Linux computer, disposable Linux VM, or authorized Linux training environment. Use a regular account. If `id -u` returns `0`, stop and use an existing authorized regular lab account. Do not create users or change permissions on a shared computer to bypass the checkpoint.
+You need a terminal in an authorized Linux computer, Linux VM, WSL Linux distribution, or suitable training environment. Use a regular user account. These notes assume Bash and GNU utilities. The editor is vi. You need no cloud account or paid resource for this lesson.
 
-You need Bash, vi, `/etc/os-release`, and common utilities including uname, id, pwd, cat, mkdir, ls, df, and date. No cloud account, package installation, Git installation, or paid resource is required today.
+A terminal is the window where you type and see results. A shell interprets what you type. The kernel manages processes, memory, and devices. A Linux distribution combines a kernel with packages, utilities, and operating-system conventions.
 
-| Your environment | What to check |
-| --- | --- |
-| Linux computer or VM | Use its Linux terminal and a regular account. |
-| WSL Linux distribution | Open the Linux distribution's terminal and use its Linux home directory. Later service and network labs need separate compatibility checks. |
-| Disposable container | The visible kernel and filesystem may belong to different layers; many containers default to root. A container does not replace every full-host lab. |
-| Remote Linux machine | Confirm permission and keep system details private. |
-| PowerShell or macOS Terminal | Arrange a Linux lab first. Do not assume Linux-specific instructions work unchanged here. |
+Use the copy button on a command block and paste it into your Linux terminal. Run one block at a time. Do not copy the expected-output blocks as commands. Sample output shows a pattern; your username, version, paths, time, and sizes can differ.
 
-If you have no Linux environment or a required tool is unavailable, stop and record your operating system and exact error. Request an environment-specific setup step. Do not run an unreviewed remote installation script.
+If you do not have a Linux environment, arrange it before continuing. PowerShell and macOS Terminal are not substitutes for the Linux lab described here. If a required tool is missing, record your distribution and exact error rather than running an unrelated installation script.
 
-Keep your practice under `$HOME/veriqta-devops-labs/linux/day-01/`, outside any repository checkout. `$HOME` already identifies your home directory; do not reassign it. Keep raw screenshots and system details private. You can study this lesson on GitHub without cloning the repository.
+### Confirm the visible kernel
 
-## Inspect before you change
+Copy and run:
 
-Imagine entering a restaurant kitchen to prepare a meal. You first check which kitchen you are in, what equipment you have, and which workbench is yours. A useful instruction applied in the wrong kitchen can still create a problem.
+```bash
+uname -s
+```
 
-Your Linux distribution is part of the operating environment. Your identity affects permissions. Your working directory determines where relative paths point. Your practice folder is your workbench. The baseline records what you actually found before changes.
+Expected output in this lab:
 
-The analogy is limited. A container can share its host's kernel while showing different filesystem contents. A single command does not identify every layer.
+```text
+Linux
+```
 
-![Teaching diagram of the separate environment checks.](../07%20Images/environment-map.svg)
+The program asks for system information, and the option selects the kernel name. This is a read-only check. If your result differs, confirm that you opened the intended Linux terminal.
 
-Text equivalent: your terminal shows commands and output, Bash interprets commands, and utilities inspect separate facts about the kernel, distribution, identity, and working directory. Record these facts in your own private baseline.
+### Confirm your account privileges
 
+Copy and run:
 
-## Terminal, shell, and operating system
+```bash
+id -u
+```
 
-Your terminal is the interface where you enter text and see output. Bash is a shell: it interprets commands, expands variables, and launches programs. The Linux kernel manages resources such as processes and devices. A distribution combines a kernel with tools, packages, and operating-system conventions.
+Example output:
 
-A prompt is the text displayed before your command. Your prompt might end in `$`, `#`, or something else. Prompts are customizable, so do not use their appearance as proof of your privileges. The lab uses `id -u` to check.
+```text
+1000
+```
 
-Copy only commands from code blocks. Do not type the prompt. Case matters: `HOME` and `home` are different variable names, and Linux paths are generally case-sensitive.
+This prints your effective numeric user ID. Other nonzero values are normal. Zero means root in the current context. If the result is zero, stop and use an existing authorized regular lab account. Do not create accounts or alter a shared system to bypass the check.
 
-## Four different questions
+A terminal prompt can be customized. Its final symbol does not reliably establish your privileges.
 
-| Question | Evidence | What it does not establish |
-| --- | --- | --- |
-| What kernel family is visible? | `uname -s` | Your distribution, cloud provider, or complete host architecture. |
-| What distribution identifies this userspace? | `/etc/os-release` | That you have a full VM, systemd, or a particular kernel. |
-| Which account is running this command? | `id -un` and `id -u` | All permissions on every file or service. |
-| Which directory are you working in? | `pwd` | That the directory is safe to modify or belongs to you. |
+### Identify the account name
 
-`uname -m` reports a machine architecture label. Examples include `x86_64` and `aarch64`. Do not assume downloaded software built for one architecture will run on the other.
+Copy and run:
 
-Read `PRETTY_NAME` in `/etc/os-release` for a human-readable distribution name. Fields such as `ID` and `VERSION_ID` are useful for identifying it precisely. Some distributions do not provide every field.
+```bash
+id -un
+```
 
-## Paths and your home directory
+Example output:
 
-An absolute path starts with `/`, such as `/home/learner/veriqta-devops-labs/linux/day-01`. A relative path is interpreted from your current directory, such as `baseline.md`. The special path `.` means the current directory.
+```text
+learner
+```
 
-`$HOME` expands to your home directory in Bash. Do not set it to a course folder. Double quotes in `"$HOME/veriqta-devops-labs/linux/day-01"` keep the expanded path together if it contains spaces. The quote characters are not part of the directory name.
+The options select the effective user identity and request its name. This is your Linux account name, not necessarily your email or display name. Keep the actual value private when sharing evidence.
 
-`mkdir -p` creates missing parent directories and accepts a directory that already exists. It does not erase existing files. `cd` changes the current shell's directory. `pwd` shows the resulting location. Check that location before creating or changing files.
+### Confirm Bash is available
 
-## A baseline records evidence
+Copy and run:
 
-A baseline is a dated starting record. It helps you explain differences later, but it is not proof that an application is healthy. Record facts and limits separately.
+```bash
+bash --version
+```
 
-For example, `df -h .` reports the filesystem containing your current directory. Its `Avail` column is an available-space estimate shown in readable units. It does not report all disks, prove that enough capacity exists for future workloads, or check quotas and inodes comprehensively.
+The first line should identify GNU Bash and its installed version. Additional license information can follow. Record your actual version rather than copying a version from an example. This check does not prove which shell you are currently using.
 
-Record timestamps with timezone or offset. `date -Iseconds` asks GNU date for an ISO-style timestamp with seconds and an offset. Two learners can see different local times without either clock being wrong.
+To work in Bash, copy and run:
 
-## vi essentials
+```bash
+bash
+```
 
-vi is a modal editor. In normal mode, keys perform editor actions. In insert mode, keys enter text.
+Expected result: a new Bash prompt, which may look identical to the previous one. You have started a child shell. The final section explains how to leave that child shell when you are finished.
 
-| Action | Keys | Result |
-| --- | --- | --- |
-| Open a file | `vi baseline.md` at the shell | Opens an existing file or starts a buffer for a new file. |
-| Start typing | `i` in normal mode | Enters insert mode. |
-| Return to normal mode | `Esc` | Ends text entry. |
-| Save and close | `:wq` then Enter | Writes the buffer and quits if writing succeeds. |
-| Quit without saving | `:q!` then Enter | Discards unsaved edits. Use only when you intend that loss. |
+## 2. Inspect before you change
 
-Opening vi is not the same as saving a file. After leaving the editor, read the file with `cat` and verify that your latest content is present. If an existing baseline opens, inspect it before editing and preserve the original observations.
+Imagine entering a restaurant kitchen. Before replacing equipment, you check which kitchen you are in, which workbench is yours, and what equipment is present. A correct instruction applied in the wrong place can still cause a problem.
 
-## Command reference
+Your distribution is part of the environment. Your identity affects permissions. Your working directory determines where relative filenames point. Your baseline records the observations before later changes.
 
-| Command | Purpose and important argument | Side effect |
-| --- | --- | --- |
-| `uname -s` | `-s` prints the kernel name. | None. |
-| `id -u` | `-u` prints the current effective numeric user ID. Zero means root privileges in this context. | None. |
-| `id -un` | `-u` selects the user ID and `-n` requests its name. | None. |
-| `bash --version` | Reports the installed Bash version, not necessarily your current shell. | None. |
-| `bash` | Starts a Bash shell. Use when you need the lesson's shell behavior. | Creates a shell process; `exit` returns to the parent shell. |
-| `cat /etc/os-release` | Prints the distribution information file. | None. |
-| `uname -m` | `-m` prints the machine architecture. | None. |
-| `pwd` | Prints your working directory. | None. |
-| `df -h .` | `-h` uses readable size units; `.` selects the current filesystem. | None. |
-| `date -Iseconds` | Reports a timestamp including a timezone offset. | None. |
-| `mkdir -p "path"` | Creates a directory and missing parents. `path` is a placeholder here. | Creates directories. |
-| `cd "path"` | Moves your shell to the specified directory. `path` is a placeholder. | Changes shell location. |
-| `ls -l baseline.md` | Shows the file's listing; `-l` includes metadata. | None. |
-| `cat baseline.md` | Reads the saved file. | None. |
+The analogy has limits. A container can share its host's kernel while presenting different filesystem contents. No single check establishes every layer of the environment.
 
-## What you are not concluding yet
+![Separate checks for kernel, distribution, identity, and workspace.](../07%20Images/environment-map.svg)
 
-You have not proved service health, production readiness, security hardening, or spare capacity. You have not established the virtualization type from the kernel name. You have established a useful, inspectable starting point for the next lessons.
+Text equivalent: your terminal displays input and output, Bash interprets commands, and individual utilities inspect separate facts. Check these facts independently before drawing conclusions.
+
+## 3. Identify your distribution
+
+Copy and run:
+
+```bash
+cat /etc/os-release
+```
+
+The utility reads the file named after it. This file contains distribution identity information. Look for these fields:
+
+```text
+PRETTY_NAME="Example Linux 1"
+ID=example
+VERSION_ID="1"
+```
+
+These values are fictional examples of the format. Read the actual values on your machine. The first field is a readable distribution name. The other two identify the distribution and its release; some systems omit the release field.
+
+The earlier kernel check and this file answer different questions. A Linux kernel name alone does not prove you are using Ubuntu or tell you which package instructions to choose.
+
+If the file is absent, record that fact and use the lesson's troubleshooting section. Do not guess the distribution.
+
+## 4. Identify machine architecture
+
+Copy and run:
+
+```bash
+uname -m
+```
+
+One example result is:
+
+```text
+x86_64
+```
+
+Another possible result is:
+
+```text
+aarch64
+```
+
+The option asks for the machine architecture label. Record only your actual result. Software built for one architecture does not automatically work on another. The label alone does not establish all compatibility requirements.
+
+## 5. Understand your location and paths
+
+An absolute Linux path starts with a slash. A relative path is interpreted from your current directory. The dot means the current directory. The home-directory variable is already provided by the shell; do not reassign it.
+
+Copy and run:
+
+```bash
+pwd
+```
+
+Example output:
+
+```text
+/home/learner
+```
+
+This prints the working directory. Your path can differ. Reading a filename without a full path asks the shell's launched program to look relative to this directory.
+
+### Create a safe notes workspace
+
+Copy and run:
+
+```bash
+mkdir -p "$HOME/veriqta-devops-labs/linux/day-01/notes-practice"
+```
+
+Expected result: no output on success. This creates the directory and any missing parents. The option accepts existing directories and does not erase their contents. The quotes preserve the expanded path as a single argument, including spaces.
+
+This notes-practice directory keeps your practice file separate from the guided lab's baseline. Never respond to a wrong path by adding administrator privileges.
+
+### Enter the directory
+
+Copy and run:
+
+```bash
+cd "$HOME/veriqta-devops-labs/linux/day-01/notes-practice"
+```
+
+Expected result: normally no output. This changes the current shell's working directory. If it reports an error, resolve it before proceeding.
+
+Verify the new location with this separate command:
+
+```bash
+pwd
+```
+
+Expected pattern:
+
+```text
+/home/learner/veriqta-devops-labs/linux/day-01/notes-practice
+```
+
+Your actual home prefix may differ. The path must end with the intended notes-practice directory. Silence from a directory-changing command is not a substitute for checking its result.
+
+## 6. Inspect available filesystem space
+
+While you are in notes-practice, copy and run:
+
+```bash
+df -h .
+```
+
+Example output pattern:
+
+```text
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/example     40G   12G   26G  32% /
+```
+
+The filesystem identifier and numbers above are illustrative. The readable-size option changes the displayed units. The final dot selects the filesystem containing your current directory.
+
+Read the available-space column and its unit. This is not a report of every disk, a complete inode or quota check, or proof that future application storage needs will be met. Do not use one space figure as a complete health diagnosis.
+
+## 7. Record the observation time
+
+Copy and run:
+
+```bash
+date -Iseconds
+```
+
+Example output format:
+
+```text
+2026-11-02T15:00:00+01:00
+```
+
+This asks GNU date for an ISO-style timestamp including seconds and a timezone offset. Use your actual result. The offset helps you compare observations from different locations. A baseline needs a capture time because system state can change.
+
+## 8. Create and save a small file in vi
+
+An editor lets you create or change file contents. vi has modes. Normal mode interprets keys as editor actions; insert mode accepts typed text.
+
+Open a practice file:
+
+```bash
+vi practice.txt
+```
+
+Expected result: the editor opens. A new file can show empty lines and a filename indicator. If the file already exists, inspect it first and preserve useful earlier work.
+
+These next actions happen **inside vi**, not at the shell prompt:
+
+1. Press the i key to enter insert mode.
+2. Type this line into a new practice file:
+
+```text
+Linux environment practice.
+```
+
+3. Press Esc to return to normal mode.
+4. Enter the following editor command and press Enter:
+
+```text
+:wq
+```
+
+Expected result: vi saves the file and returns to the shell. The letters request writing and quitting. If an error appears, the save has not succeeded; do not assume your text is safely on disk.
+
+To abandon unsaved edits deliberately, press Esc, then use this **editor command** and press Enter:
+
+```text
+:q!
+```
+
+This discards unsaved changes. Do not use it when you need to keep those edits. Do not paste either editor command into a Bash prompt.
+
+## 9. Verify the file and its contents
+
+First, copy and run:
+
+```bash
+ls -l practice.txt
+```
+
+Example output pattern:
+
+```text
+-rw-r--r-- 1 learner learner 28 Nov 2 15:00 practice.txt
+```
+
+Your permissions, account names, timestamp, and byte count can differ. The long listing shows metadata, including the filename and size. A nonzero size indicates the file has contents; it does not prove they are the right contents.
+
+Read the actual saved content:
+
+```bash
+cat practice.txt
+```
+
+Expected output for the new file created above:
+
+```text
+Linux environment practice.
+```
+
+If this differs, reopen the file using the editor step, inspect what was saved, and correct the intended text. Then save and read it again.
+
+### Check that location matters
+
+Return to your home directory:
+
+```bash
+cd "$HOME"
+```
+
+Expected result: normally no output. You have changed directories; you have not deleted the practice file.
+
+Return to your notes workspace:
+
+```bash
+cd "$HOME/veriqta-devops-labs/linux/day-01/notes-practice"
+```
+
+Expected result: normally no output. Now read the file again:
+
+```bash
+cat practice.txt
+```
+
+Expected output:
+
+```text
+Linux environment practice.
+```
+
+The saved file belongs to the filesystem, not the terminal's display history. Closing a terminal does not ordinarily erase the file. Deleting a disposable container or other temporary environment can erase its local filesystem, so do not confuse terminal persistence with a backup.
+
+## 10. Finish the notes practice
+
+Keep the practice file. This exercise created no service or cloud resource. If you started the extra Bash shell earlier and want to return to its parent, copy and run once:
+
+```bash
+exit
+```
+
+Expected result: the child Bash session ends and you return to its parent prompt. Running it at the outermost shell can close the terminal session, so do not repeat it blindly.
+
+Your guided lab will create the actual Day 01 baseline in the main Day 01 workspace. The projects will turn that baseline into documented portfolio work.
+
+## What you can now explain
+
+- How the terminal, shell, kernel, and distribution differ.
+- Why numeric identity is stronger evidence than a prompt's appearance.
+- Why distribution and architecture need separate checks.
+- How a working directory affects relative filenames.
+- Why saving, listing, reading, and reopening are separate checks.
+- Why a baseline needs an observation time and clear limitations.
 
 ## Official references
 
-Use these to confirm a command's behavior, not as an extra course to finish before the lab. Reference review date: 2 November 2026.
-
-- [Bash manual](https://www.gnu.org/software/bash/manual/bash.html), shell commands, variables, and quoting.
-- [GNU uname](https://www.gnu.org/software/coreutils/manual/html_node/uname-invocation.html), kernel and architecture information.
-- [GNU id](https://www.gnu.org/software/coreutils/manual/html_node/id-invocation.html), numeric identity and account names.
-- [GNU mkdir](https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html), directory creation.
-- [GNU Coreutils](https://www.gnu.org/software/coreutils/manual/coreutils.html), file, date, and disk-reporting utilities.
-- [os-release specification](https://www.freedesktop.org/software/systemd/man/latest/os-release.html), distribution identity fields.
-- [Vim basic editing](https://vimhelp.org/usr_02.txt.html), modal editing when vi is provided by Vim.
+- [Bash manual](https://www.gnu.org/software/bash/manual/bash.html), shell behavior and quoting.
+- [GNU Coreutils](https://www.gnu.org/software/coreutils/manual/coreutils.html), the system, file, and date utilities used here.
+- [Distribution identity fields](https://www.freedesktop.org/software/systemd/man/latest/os-release.html).
+- [Vim basic editing](https://vimhelp.org/usr_02.txt.html), when vi is provided by Vim.
 
 [Continue to the lab](../02%20Follow%20Along%20Lab/README.md) · [Day 01](../README.md)
