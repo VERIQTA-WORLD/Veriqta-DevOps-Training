@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+<title id="title">Build Work You Can Demonstrate</title>
+<desc id="desc">A complete project includes instructions and verification. Teaching diagram, not observed terminal output.</desc>
+<rect width="1080" height="1350" fill="#f6f8f7"/>
+<g font-family="Arial, sans-serif">
+<rect x="78" y="70" width="924" height="8" fill="#00382F"/>
+<text x="78" y="125" font-size="22" fill="#00382F">VERIQTA DevOps Training, Linux Day 02</text>
+<text x="78" y="184" font-size="36" font-weight="bold" fill="#00382F">Build Work You Can Demonstrate</text>
+<text x="78" y="226" font-size="23" fill="#47524f">A complete project includes instructions and verification.</text>
+<rect x="78" y="272" width="924" height="195" rx="12" fill="white" stroke="#cbd8d3"/>
+<text x="105" y="315" font-size="26" font-weight="bold" fill="#00382F">1. Build the workspace</text>
+<text x="105" y="358" font-size="24" fill="#24302b">Create the directory roles and synthetic configuration.</text>
+<text x="105" y="393" font-size="24" fill="#24302b">Verify the location, hidden marker, and saved content.</text>
+<rect x="78" y="492" width="924" height="195" rx="12" fill="white" stroke="#cbd8d3"/>
+<text x="105" y="535" font-size="26" font-weight="bold" fill="#00382F">2. Record the evidence</text>
+<text x="105" y="578" font-size="24" fill="#24302b">Save an actual inventory and explain each directory.</text>
+<text x="105" y="613" font-size="24" fill="#24302b">Keep identifiers private and resolve template fields.</text>
+<rect x="78" y="712" width="924" height="195" rx="12" fill="white" stroke="#cbd8d3"/>
+<text x="105" y="755" font-size="26" font-weight="bold" fill="#00382F">3. Exercise change and recovery</text>
+<text x="105" y="798" font-size="24" fill="#24302b">Preserve v001, observe v002, and restore v001.</text>
+<text x="105" y="833" font-size="24" fill="#24302b">Compare bytes and read the recovered file.</text>
+<rect x="78" y="932" width="924" height="195" rx="12" fill="white" stroke="#cbd8d3"/>
+<text x="105" y="975" font-size="26" font-weight="bold" fill="#00382F">4. Publish reviewed results</text>
+<text x="105" y="1018" font-size="24" fill="#24302b">Use your own portfolio repository.</text>
+<text x="105" y="1053" font-size="24" fill="#24302b">Follow every saved README link as a visitor.</text>
+<text x="78" y="1195" font-size="23" fill="#47524f">A working explanation matters as much as a tidy folder.</text>
+<text x="78" y="1240" font-size="21" fill="#47524f">Teaching diagram. Retain your own actual verification.</text>
+<text x="1002" y="1290" text-anchor="end" font-size="24" fill="#00382F" opacity="0.28">VERIQTA</text>
+</g></svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+<title id="title">Reason Before You Change Files</title>
+<desc id="desc">Location, operation, and verification answer different questions. Teaching diagram, not observed terminal output.</desc>
+<rect width="1080" height="1350" fill="#f6f8f7"/>
+<g font-family="Arial, sans-serif">
+<rect x="78" y="70" width="924" height="8" fill="#00382F"/>
+<text x="78" y="125" font-size="22" fill="#00382F">VERIQTA DevOps Training, Linux Day 02</text>
+<text x="78" y="184" font-size="36" font-weight="bold" fill="#00382F">Reason Before You Change Files</text>
+<text x="78" y="226" font-size="23" fill="#47524f">Location, operation, and verification answer different questions.</text>
+<rect x="78" y="272" width="924" height="195" rx="12" fill="white" stroke="#cbd8d3"/>
+<text x="105" y="315" font-size="26" font-weight="bold" fill="#00382F">1. Where am I working?</text>
+<text x="105" y="358" font-size="24" fill="#24302b">Relative names depend on your current directory.</text>
+<text x="105" y="393" font-size="24" fill="#24302b">Case and spaces affect the selected path.</text>
+<rect x="78" y="492" width="924" height="195" rx="12" fill="white" stroke="#cbd8d3"/>
+<text x="105" y="535" font-size="26" font-weight="bold" fill="#00382F">2. What will this operation do?</text>
+<text x="105" y="578" font-size="24" fill="#24302b">Copy retains a source; move changes its location or name.</text>
+<text x="105" y="613" font-size="24" fill="#24302b">An overwrite can replace useful existing content.</text>
+<rect x="78" y="712" width="924" height="195" rx="12" fill="white" stroke="#cbd8d3"/>
+<text x="105" y="755" font-size="26" font-weight="bold" fill="#00382F">3. What will I verify?</text>
+<text x="105" y="798" font-size="24" fill="#24302b">Two filenames are not proof of equal contents.</text>
+<text x="105" y="833" font-size="24" fill="#24302b">Read comparison status immediately after the check.</text>
+<rect x="78" y="932" width="924" height="195" rx="12" fill="white" stroke="#cbd8d3"/>
+<text x="105" y="975" font-size="26" font-weight="bold" fill="#00382F">4. What remains unknown?</text>
+<text x="105" y="1018" font-size="24" fill="#24302b">Readable content does not prove service health.</text>
+<text x="105" y="1053" font-size="24" fill="#24302b">A hidden file is not automatically protected.</text>
+<text x="78" y="1195" font-size="23" fill="#47524f">Predict, perform a bounded action, and explain actual results.</text>
+<text x="78" y="1240" font-size="21" fill="#47524f">Teaching diagram. Retain your own actual verification.</text>
+<text x="1002" y="1290" text-anchor="end" font-size="24" fill="#00382F" opacity="0.28">VERIQTA</text>
+</g></svg>
