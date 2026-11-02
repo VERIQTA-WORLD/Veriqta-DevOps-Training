@@ -1,42 +1,40 @@
-# DevOps curriculum
+# DevOps learning roadmap
 
-Follow the main modules in this order. Each module contains as many sessions as its outcomes require. A week groups up to five learning sessions within one module. Day numbers continue across the whole course; week numbers restart within a module.
+Complete the numbered tool folders in order. Inside each tool, study Day 01, Day 02, and onward. There are no weeks. Day numbering restarts when you begin a new tool.
 
-Only Module 01, Day 001 has been published. Every other subject below is planned. A topic name is not a link to an unfinished lesson.
+The day counts below are the initial teaching plan. Difficult tasks can take more than one study session. Additional repair or advanced lessons can be added when the practical outcomes require them. You are not expected to become a senior engineer simply by reaching a particular day number.
 
-| Module | Subject | What you will practice |
+| Tool | Planned days | Practical destination |
 | --- | --- | --- |
-| 01 | [Linux](modules/01-linux/README.md) | Shell and files, text processing, users and permissions, packages, processes, signals, systemd, journals, SSH, disks and mounts, resource investigation, scheduling, and safe service operations. |
-| 02 | Networking | IP and subnetting, routes, DNS, TCP/UDP, ports, HTTP/TLS, firewalls, NAT, proxies, load balancing, request paths, packet inspection, and connection diagnosis. |
-| 03 | Git and GitHub | History, branches, remotes, authentication, pull requests, review, conflicts, revert, tags, releases, and collaborative changes. |
-| 04 | Bash and Shell Scripting | Quoting and expansion, variables, pipes, status codes, conditions, loops, functions, arguments, traps, safe error handling, linting, and repeatable operational tasks. |
-| 05 | Python | Environments, dependencies, data structures, files and JSON, functions, modules, APIs, exceptions, logging, tests, CLI tools, timeouts, and retries. |
-| 06 | AWS | Account protection, identity and roles, CLI, regions, VPCs, subnets and routes, security groups, EC2, S3, load balancing, database concepts, logs, monitoring, budgets, and teardown. |
-| 07 | Maven | The Java essentials you need, project structure, POM, dependencies, build lifecycle, tests, packaging, versioning, and build reproducibility. |
-| 08 | JFrog Artifactory | Local, remote, and virtual repositories, Maven integration, credentials, versioned artifacts, build metadata, promotion, retention, and access. |
-| 09 | SonarQube | Static analysis, project configuration, coverage reporting, quality gates, triage, limitations, and pipeline integration. |
-| 10 | Docker | Images and layers, Dockerfiles, build context and caching, multi-stage builds, non-root operation, registries, networks, volumes, Compose, logs, limits, and image scanning. |
-| 11 | Jenkins and CI/CD | Pipeline as code, agents, triggers, credentials, tests and scans, artifacts, environments, deployment checks, approvals, rollback, and comparison with GitHub Actions concepts. |
-| 12 | Terraform | Providers, resources, dependencies, variables and outputs, plans, state, backend locking, modules, drift, import, secrets, and safe infrastructure changes. |
-| 13 | Ansible | Inventory, SSH, modules, playbooks, variables, templates, handlers, roles, idempotence, secret handling, and controlled rollout. |
-| 14 | Kubernetes | API and reconciliation, runtimes, workloads, configuration, Services, health probes, resources, scheduling, storage, access, networking, traffic entry, policy, scaling, upgrades, and recovery. |
-| 15 | Helm | Chart structure, templates and values, dependencies, validation, release history, upgrades, rollback, and secrets boundaries. |
-| 16 | AWS EKS | Managed control plane responsibilities, workload identity, cluster access, networking, compute, storage, load balancing, upgrades, observability, cost, and teardown. |
-| 17 | Prometheus | Instrumentation, scrape targets, labels and cardinality, PromQL, recording and alert rules, Alertmanager, retention, and resource planning. |
-| 18 | Grafana | Data sources and dashboards, logs and traces, user impact, SLIs, SLOs, error budgets, alerts, and ownership. |
-| 19 | Argo CD and GitOps | Desired state, reconciliation, application definitions, drift, sync and health, environment promotion, secrets, and recovery through reviewed changes. |
-| 20 | Security and DevSecOps | Threat modeling, least privilege, secrets, dependency and container scanning, SBOMs, signing and provenance, policy, hardening, audits, incident response, and vulnerability management. |
+| [01 Linux](01%20Linux/README.md) | 25 | Inspect, operate, troubleshoot, and recover a Linux service. |
+| [02 Networking](02%20Networking/README.md) | 8 | Trace and diagnose an application request across a network. |
+| [03 Git and GitHub](03%20Git%20and%20GitHub/README.md) | 7 | Deliver and recover a reviewed application change. |
+| [04 Bash and Shell Scripting](04%20Bash%20and%20Shell%20Scripting/README.md) | 7 | Build safe and explainable operational automation. |
+| [05 Python](05%20Python/README.md) | 8 | Build and test a small operational CLI. |
+| [06 AWS](06%20AWS/README.md) | 12 | Deploy a small cloud application and explain its access, cost, and recovery. |
+| [07 Maven](07%20Maven/README.md) | 5 | Produce a tested, versioned Java application artifact. |
+| [08 JFrog Artifactory](08%20JFrog%20Artifactory/README.md) | 4 | Publish and retrieve a controlled versioned artifact. |
+| [09 SonarQube](09%20SonarQube/README.md) | 4 | Use quality findings to make a justified release decision. |
+| [10 Docker](10%20Docker/README.md) | 10 | Run the application as cooperating, inspectable containers. |
+| [11 Jenkins and CI-CD](11%20Jenkins%20and%20CI-CD/README.md) | 8 | Deliver a verified release through a repeatable pipeline. |
+| [12 Terraform](12%20Terraform/README.md) | 8 | Review, create, change, and recover infrastructure through code. |
+| [13 Ansible](13%20Ansible/README.md) | 6 | Configure the lab hosts repeatably and safely. |
+| [14 Kubernetes](14%20Kubernetes/README.md) | 16 | Deploy, operate, and troubleshoot the multi-tier application. |
+| [15 Helm](15%20Helm/README.md) | 4 | Package and release the application predictably. |
+| [16 AWS EKS](16%20AWS%20EKS/README.md) | 7 | Operate the application on a managed Kubernetes platform. |
+| [17 Prometheus](17%20Prometheus/README.md) | 5 | Measure service behavior and detect a meaningful failure. |
+| [18 Grafana](18%20Grafana/README.md) | 5 | Explain user impact using useful dashboards and signals. |
+| [19 Argo CD and GitOps](19%20Argo%20CD%20and%20GitOps/README.md) | 5 | Deliver reviewed desired state and recover from drift. |
+| [20 Security and DevSecOps](20%20Security%20and%20DevSecOps/README.md) | 10 | Review and harden the complete platform with evidence. |
 
-## Skills that connect the modules
+## One connected learning path
 
-You practice documentation, safe changes, testing, and security from the start. You add YAML and JSON, APIs, certificates, databases, logs and traces, performance, capacity, backup restoration, disaster recovery, reliability, cost management, platform usability, and technical communication at the relevant stages.
+Begin by learning the Linux environment beneath a service. Trace its network requests, manage changes with Git, automate its operations, and deploy it to AWS. Build its Java API with Maven, store artifacts, check code quality, containerize it, and automate delivery. Manage infrastructure with Terraform and Ansible. Move to Kubernetes, Helm, and EKS, then add observability, GitOps, and a final security review.
 
-Basic Git use can be introduced before Module 03 to save work. Early AWS exercises precede Terraform so you can see the infrastructure that code will later manage. Basic health checks precede Prometheus and Grafana. Security gets a final integration module and remains part of every earlier lesson.
+Security, troubleshooting, testing, backups, recovery, costs, and technical communication appear throughout the lessons. The final tool integrates these practices rather than introducing security for the first time.
 
-## How progression works
+Your projects use synthetic data and authorized lab systems. Later assessments require you to make and justify decisions about reliability, access, rollout, recovery, capacity, and cost.
 
-You first complete guided tasks, then modify them, and finally solve an unfamiliar task independently. Module assessments check whether you can build, explain, investigate, and recover. If a gap appears, complete a focused repair exercise before dependent work.
+All learning materials belong inside the relevant tool and day. The root contains only the tool folders, this roadmap, README, security guidance, contributing guidance, and .gitignore.
 
-The [project](project/README.md) gives the curriculum continuity. The [portfolio](portfolio/README.md) gives you a way to demonstrate what you can actually do. You will not be assessed by the number of videos watched, commits made, or commands memorized.
-
-[Course home](README.md) · [Lesson index](PROGRESS.md)
+[Begin with Linux](01%20Linux/README.md) · [Course home](README.md)

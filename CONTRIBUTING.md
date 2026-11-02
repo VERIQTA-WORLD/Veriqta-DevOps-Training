@@ -1,11 +1,13 @@
-# Questions, corrections, and contributions
+# Questions and corrections
 
-If you are stuck, check the lesson's troubleshooting file first. When asking a question through [repository issues](https://github.com/veriqta/Veriqta-DevOps-Training/issues), include the lesson and step, your environment, the exact command, the expected result, and the actual redacted error.
+If you are stuck, read the troubleshooting section inside the relevant day first.
 
-Do not include passwords, tokens, private keys, customer records, raw infrastructure inventories, or private screenshots. Use the [security guidance](SECURITY.md) for sensitive concerns.
+When asking a question in [repository issues](https://github.com/veriqta/Veriqta-DevOps-Training/issues), state the tool, day, section, exact command, expected result, and actual redacted result. Include only the environment details needed to understand the problem.
 
-For a correction, identify the file and explain the specific technical or teaching problem. Keep proposed changes focused. Do not submit large copied tutorials, generated output presented as real evidence, or unrelated tool additions.
+Keep credentials, private keys, private system details, and learner records out of public issues. Follow [security guidance](SECURITY.md) for sensitive concerns.
 
-A repository-wide open-source contribution license has not been selected. Until contribution terms are established, use issues for suggestions and corrections rather than submitting substantial third-party material.
+For a correction, identify the lesson file and the technical or teaching problem. Keep suggestions focused, accurate, and written directly to the learner as you. Do not submit copied tutorials or invented execution evidence.
 
-Course content speaks directly to the learner as "you". Follow the [teaching standard](docs/teaching-standard.md) when proposing an improvement.
+A contribution license has not yet been selected. Use issues for suggestions and corrections until terms for substantial external contributions are established.
+
+[Course home](README.md)

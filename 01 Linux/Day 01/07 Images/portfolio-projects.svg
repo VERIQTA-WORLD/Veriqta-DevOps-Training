@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+<title id="title">Your First Portfolio Artifacts</title>
+<desc id="desc">Small records can demonstrate clear engineering habits. Teaching diagram, not terminal evidence.</desc>
+<rect width="1080" height="1350" fill="#f6f8f7"/>
+<g font-family="Arial, sans-serif">
+<rect x="78" y="70" width="924" height="8" fill="#00382F"/>
+<text x="78" y="125" font-size="22" fill="#00382F">VERIQTA DevOps Training, Linux Day 01</text>
+<text x="78" y="184" font-size="36" font-weight="bold" fill="#00382F">Your First Portfolio Artifacts</text>
+<text x="78" y="226" font-size="23" fill="#47524f">Small records can demonstrate clear engineering habits.</text>
+<rect x="78" y="272" width="924" height="195" rx="12" fill="white" stroke="#cbd8d3"/>
+<text x="105" y="315" font-size="26" font-weight="bold" fill="#00382F">1. Project 01, system baseline</text>
+<text x="105" y="358" font-size="24" fill="#24302b">Record the environment you actually inspected.</text>
+<text x="105" y="393" font-size="24" fill="#24302b">Include a capture time and an evidence limitation.</text>
+<rect x="78" y="492" width="924" height="195" rx="12" fill="white" stroke="#cbd8d3"/>
+<text x="105" y="535" font-size="26" font-weight="bold" fill="#00382F">2. Verify the baseline</text>
+<text x="105" y="578" font-size="24" fill="#24302b">Read the saved file from outside its directory.</text>
+<text x="105" y="613" font-size="24" fill="#24302b">Compare recorded values with actual observations.</text>
+<rect x="78" y="712" width="924" height="195" rx="12" fill="white" stroke="#cbd8d3"/>
+<text x="105" y="755" font-size="26" font-weight="bold" fill="#00382F">3. Project 02, environment handover</text>
+<text x="105" y="798" font-size="24" fill="#24302b">Explain how to locate and interpret your baseline.</text>
+<text x="105" y="833" font-size="24" fill="#24302b">State the scope and the next learning action.</text>
+<rect x="78" y="932" width="924" height="195" rx="12" fill="white" stroke="#cbd8d3"/>
+<text x="105" y="975" font-size="26" font-weight="bold" fill="#00382F">4. Verify the handover</text>
+<text x="105" y="1018" font-size="24" fill="#24302b">Follow your own navigation instructions.</text>
+<text x="105" y="1053" font-size="24" fill="#24302b">Review private details before sharing a copy.</text>
+<text x="78" y="1195" font-size="23" fill="#47524f">These are foundation artifacts, not production deployments.</text>
+<text x="78" y="1240" font-size="21" fill="#47524f">Teaching diagram. Use actual output for your evidence.</text>
+<text x="1002" y="1290" text-anchor="end" font-size="24" fill="#00382F" opacity="0.28">VERIQTA</text>
+</g></svg>
