@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/readme-banner.svg" alt="VERIQTA DevOps Training. Build systems. Understand failures. Learn by doing." width="640">
+</p>
+
 # VERIQTA DevOps Training
 
 Learn DevOps from the beginning by building, operating, and troubleshooting a real lab system.

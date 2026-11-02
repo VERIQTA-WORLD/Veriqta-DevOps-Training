@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title description">
+  <title id="title">VERIQTA DevOps Training</title>
+  <desc id="description">Build systems. Understand failures. Learn by doing. A practical DevOps course covering Linux, cloud, delivery, and operations.</desc>
+  <rect width="1080" height="1350" fill="#F3F1EA"/>
+  <rect x="32" y="32" width="1016" height="1286" fill="#00382F"/>
+  <g font-family="Arial, sans-serif">
+    <text x="94" y="132" fill="#F3F1EA" font-size="34" font-weight="700" letter-spacing="4">VERIQTA</text>
+    <text x="986" y="130" fill="#B7CEC3" font-size="20" text-anchor="end">PRACTICAL ENGINEERING</text>
+    <path d="M94 174H986" stroke="#5C8374" stroke-width="1"/>
+
+    <text x="86" y="370" fill="#F3F1EA" font-size="154" font-weight="700" letter-spacing="-7">DevOps</text>
+    <text x="86" y="520" fill="#F3F1EA" font-size="154" font-weight="700" letter-spacing="-7">Training</text>
+    <rect x="96" y="566" width="84" height="7" fill="#C8D7A5"/>
+
+    <text x="94" y="674" fill="#F3F1EA" font-size="43">Build systems.</text>
+    <text x="94" y="736" fill="#F3F1EA" font-size="43">Understand failures.</text>
+    <text x="94" y="798" fill="#C8D7A5" font-size="43">Learn by doing.</text>
+
+    <g fill="none" stroke="#5C8374" stroke-width="1">
+      <path d="M94 894H986 M94 1008H986 M94 1122H986"/>
+      <path d="M540 894V1122"/>
+    </g>
+    <text x="94" y="935" fill="#A7C0B4" font-size="16" letter-spacing="2">FOUNDATIONS</text>
+    <text x="94" y="979" fill="#F3F1EA" font-size="31">Linux and networking</text>
+    <text x="576" y="935" fill="#A7C0B4" font-size="16" letter-spacing="2">AUTOMATION</text>
+    <text x="576" y="979" fill="#F3F1EA" font-size="31">Code and cloud</text>
+    <text x="94" y="1049" fill="#A7C0B4" font-size="16" letter-spacing="2">DELIVERY</text>
+    <text x="94" y="1093" fill="#F3F1EA" font-size="31">Build and deploy</text>
+    <text x="576" y="1049" fill="#A7C0B4" font-size="16" letter-spacing="2">OPERATIONS</text>
+    <text x="576" y="1093" fill="#F3F1EA" font-size="31">Observe and recover</text>
+
+    <text x="94" y="1220" fill="#F3F1EA" font-size="22" letter-spacing="1">ONE DAY. ONE PRACTICAL STEP.</text>
+    <text x="986" y="1268" fill="#A7C0B4" font-size="18" text-anchor="end">VERIQTA DevOps Training</text>
+  </g>
+</svg>

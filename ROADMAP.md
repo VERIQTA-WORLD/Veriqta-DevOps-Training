@@ -35,6 +35,6 @@ Security, troubleshooting, testing, backups, recovery, costs, and technical comm
 
 Your projects use synthetic data and authorized lab systems. Later assessments require you to make and justify decisions about reliability, access, rollout, recovery, capacity, and cost.
 
-All learning materials belong inside the relevant tool and day. The root contains only the tool folders, this roadmap, README, security guidance, contributing guidance, and .gitignore.
+All learning materials belong inside the relevant tool and day. The root contains the tool folders, an assets folder for the README banner, this roadmap, README, security guidance, contributing guidance, and .gitignore.
 
 [Begin with Linux](01%20Linux/README.md) · [Course home](README.md)
