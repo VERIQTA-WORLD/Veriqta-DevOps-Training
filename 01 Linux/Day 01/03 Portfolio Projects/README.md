@@ -15,6 +15,4 @@ Text equivalent: Project 01 captures actual environment observations. Project 02
 
 You will later operate a fictional learning-platform application. Today's baseline is the first record of the environment beneath it. Keep the same private workspace as the application evolves. Each future day will state the previous artifact it builds on and the new result you must verify.
 
-All project teaching material stays inside its tool and day. There is no separate root project or portfolio folder to navigate.
-
 [Knowledge checks](../04%20Knowledge%20Checks/README.md) · [Day 01](../README.md)

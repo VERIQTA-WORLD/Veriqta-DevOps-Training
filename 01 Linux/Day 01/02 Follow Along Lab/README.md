@@ -2,7 +2,7 @@
 
 Outcome: create a private, evidence-based environment baseline and reopen it successfully.
 
-Run commands one at a time. In live instruction, stop after each requested checkpoint and wait for feedback. Independently, compare your result with the stated expectation before proceeding. All sample output below is illustrative, not a transcript from your machine.
+Run commands one at a time and compare each result with the stated expectation before proceeding. Sample output illustrates a pattern; record the actual values from your machine.
 
 ## Step 1, confirm Linux before changing anything
 
@@ -81,7 +81,7 @@ An absolute Linux path begins with `/`. Your initial location can differ from an
 Create the workspace:
 
 ```sh
-mkdir -p "$HOME/veriqta-devops-labs/day-01"
+mkdir -p "$HOME/veriqta-devops-labs/linux/day-01"
 ```
 
 `-p` creates any missing parent directories. Bash expands `$HOME`; the quotes keep the path together. The command creates directories under your own home and does not erase existing contents. Success normally prints nothing. Silence by itself is not your final verification.
@@ -89,7 +89,7 @@ mkdir -p "$HOME/veriqta-devops-labs/day-01"
 Move into it:
 
 ```sh
-cd "$HOME/veriqta-devops-labs/day-01"
+cd "$HOME/veriqta-devops-labs/linux/day-01"
 ```
 
 Verify the location:
@@ -98,7 +98,7 @@ Verify the location:
 pwd
 ```
 
-Expected pattern: your actual home directory followed by `/veriqta-devops-labs/day-01`. If it differs, stop before writing the file and resolve the path.
+Expected pattern: your actual home directory followed by `/veriqta-devops-labs/linux/day-01`. If it differs, stop before writing the file and resolve the path.
 
 Inspect space for this workspace:
 
@@ -143,7 +143,7 @@ Available space for this workspace: [Avail value from df -h .]
 
 Observation: [one fact you confirmed]
 Limitation: [one thing these checks do not prove]
-Next action: Verify this file, then complete the Day 01 assessment.
+Next action: Verify this file, then complete the Day 01 portfolio projects and assessment.
 ```
 
 This is a text document, not a script. You are writing a record of observed evidence, so do not paste example answers as your own results.
@@ -175,7 +175,7 @@ cd "$HOME"
 Return:
 
 ```sh
-cd "$HOME/veriqta-devops-labs/day-01"
+cd "$HOME/veriqta-devops-labs/linux/day-01"
 ```
 
 Read the saved file again:

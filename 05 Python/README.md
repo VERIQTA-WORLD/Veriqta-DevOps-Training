@@ -2,24 +2,21 @@
 
 Build and test a small operational CLI.
 
-Open the days below in order. Each day will contain its own notes, follow-along lab, portfolio projects, knowledge checks, assessment, troubleshooting, images, and evidence guidance. Day numbers restart within this tool.
+Build your skills through practical lessons, hands-on labs, portfolio projects, and independent assessments. The curriculum connects technical understanding with verifiable results and troubleshooting practice.
 
 ## Your daily curriculum
 
 | Day | Lesson | Observable outcome |
 | --- | --- | --- |
-| Day 01, planned | Python environments and dependencies | Create an isolated environment with recorded dependencies. |
-| Day 02, planned | Values, collections, and functions | Transform synthetic service observations into a useful summary. |
-| Day 03, planned | Files and JSON | Read, validate, and write a structured operational report. |
-| Day 04, planned | Exceptions and logging | Make failures visible without exposing secrets. |
-| Day 05, planned | HTTP APIs and timeouts | Query a lab endpoint with bounded waits and explicit error handling. |
-| Day 06, planned | CLI arguments and modules | Package your checks as a small command-line tool. |
-| Day 07, planned | Tests and retry boundaries | Test useful behavior and control retries. |
-| Day 08, planned | Python portfolio and assessment | Deliver the tool with tests, instructions, and a diagnosed failure. |
+| Day 01 | Python environments and dependencies | Create an isolated environment with recorded dependencies. |
+| Day 02 | Values, collections, and functions | Transform synthetic service observations into a useful summary. |
+| Day 03 | Files and JSON | Read, validate, and write a structured operational report. |
+| Day 04 | Exceptions and logging | Make failures visible without exposing secrets. |
+| Day 05 | HTTP APIs and timeouts | Query a lab endpoint with bounded waits and explicit error handling. |
+| Day 06 | CLI arguments and modules | Package your checks as a small command-line tool. |
+| Day 07 | Tests and retry boundaries | Test useful behavior and control retries. |
+| Day 08 | Python portfolio and assessment | Deliver the tool with tests, instructions, and a diagnosed failure. |
 
-
-Planned means the complete lesson has not been published. Only available lessons have links. Do not treat a curriculum outline as a completed class.
-
-Your practical portfolio grows inside these lessons. Each published day's portfolio projects explain what to build, what to verify, what to retain, and what the result demonstrates.
+Your portfolio connects working artifacts with evidence, explanations, and limitations. Document the decisions you make, the failures you investigate, and the checks that verify your results.
 
 [Full roadmap](../ROADMAP.md) · [Course home](../README.md)

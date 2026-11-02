@@ -2,9 +2,9 @@
 
 Complete the numbered tool folders in order. Inside each tool, study Day 01, Day 02, and onward. There are no weeks. Day numbering restarts when you begin a new tool.
 
-The day counts below are the initial teaching plan. Difficult tasks can take more than one study session. Additional repair or advanced lessons can be added when the practical outcomes require them. You are not expected to become a senior engineer simply by reaching a particular day number.
+The curriculum is organized into daily learning objectives. A lesson can span more than one study session. Progress depends on your ability to build, explain, troubleshoot, and verify your work.
 
-| Tool | Planned days | Practical destination |
+| Tool | Learning days | Practical destination |
 | --- | --- | --- |
 | [01 Linux](01%20Linux/README.md) | 25 | Inspect, operate, troubleshoot, and recover a Linux service. |
 | [02 Networking](02%20Networking/README.md) | 8 | Trace and diagnose an application request across a network. |

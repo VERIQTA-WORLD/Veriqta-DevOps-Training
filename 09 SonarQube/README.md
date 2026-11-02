@@ -2,20 +2,17 @@
 
 Use quality findings to make a justified release decision.
 
-Open the days below in order. Each day will contain its own notes, follow-along lab, portfolio projects, knowledge checks, assessment, troubleshooting, images, and evidence guidance. Day numbers restart within this tool.
+Build your skills through practical lessons, hands-on labs, portfolio projects, and independent assessments. The curriculum connects technical understanding with verifiable results and troubleshooting practice.
 
 ## Your daily curriculum
 
 | Day | Lesson | Observable outcome |
 | --- | --- | --- |
-| Day 01, planned | Analysis and project setup | Analyze the small application and interpret results. |
-| Day 02, planned | Coverage and quality gates | Import test coverage and explain a failed gate. |
-| Day 03, planned | Findings and limitations | Fix a valid issue and justify the treatment of other findings. |
-| Day 04, planned | Quality assessment | Connect analysis to a build without treating a passed scan as complete security. |
+| Day 01 | Analysis and project setup | Analyze the small application and interpret results. |
+| Day 02 | Coverage and quality gates | Import test coverage and explain a failed gate. |
+| Day 03 | Findings and limitations | Fix a valid issue and justify the treatment of other findings. |
+| Day 04 | Quality assessment | Connect analysis to a build without treating a passed scan as complete security. |
 
-
-Planned means the complete lesson has not been published. Only available lessons have links. Do not treat a curriculum outline as a completed class.
-
-Your practical portfolio grows inside these lessons. Each published day's portfolio projects explain what to build, what to verify, what to retain, and what the result demonstrates.
+Your portfolio connects working artifacts with evidence, explanations, and limitations. Document the decisions you make, the failures you investigate, and the checks that verify your results.
 
 [Full roadmap](../ROADMAP.md) · [Course home](../README.md)

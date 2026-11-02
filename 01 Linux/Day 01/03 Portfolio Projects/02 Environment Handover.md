@@ -13,7 +13,7 @@ In your private Day 01 workspace, use vi to create `handover.md`. Write a short 
 - The commands you would use to navigate to it and read it.
 - One reason distribution identity and machine architecture matter before installing software.
 - One fact that remains unknown, such as the future application's health.
-- The next action, finish Day 01 checks and wait for the next published Linux day.
+- The next action, complete your Day 01 checks, then continue to files, paths, and the project workspace.
 
 Use actual observations and your own explanation. If the file already exists, preserve the previous attempt and choose a new filename.
 

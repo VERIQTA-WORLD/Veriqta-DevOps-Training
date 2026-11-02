@@ -23,12 +23,12 @@ Text output is useful because it is searchable. Screenshots can show context, bu
 
 An expected-output example explains a pattern. An author test describes a specific environment used to check the material. Learner evidence describes your own run. These are three different things.
 
-The [day overview](../README.md#validation-and-evidence) records author checks and platform limitations. It does not certify your results.
+The command and file-persistence checks for this lesson used an isolated Ubuntu 24.04.3 LTS container running as root, with Bash and GNU utilities. vi saving was checked in noninteractive Ex mode. These checks do not cover the complete regular-user lab, interactive editing, WSL, or other distributions. Verify your own environment and results against the task criteria.
 
 ## Before sharing
 
 Review usernames, absolute home paths, filesystem labels, internal host details, and any accidental secrets. Replace sensitive values with explicit labels such as `[redacted username]`; do not replace a failed result with a successful one. Retain the original privately if you need it for diagnosis.
 
-During live instruction, a screenshot or short transcript for the current step is enough. Do not upload your whole home directory. Public portfolio evidence should use reviewed, sanitized material.
+When asking for help, share the relevant redacted output and the exact step. Public portfolio evidence should use reviewed, sanitized material.
 
 [Lesson overview](../README.md)

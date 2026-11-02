@@ -19,8 +19,6 @@ Your outcome is a real saved baseline, not a deployed service. Allow around 45 t
 | [07 Images](07%20Images/README.md) | Review the teaching diagrams and their text equivalents. |
 | [08 Evidence](08%20Evidence/README.md) | Check what to retain, label, and redact. |
 
-All your Day 01 learning materials are here. You do not need a separate documentation, project, or template folder elsewhere in the repository.
-
 ## Before you start
 
 Use an authorized Linux lab, a regular user account, Bash, common Linux utilities, and vi. The notes explain these requirements. You need no cloud account, paid service, installation command, or administrator access for this lesson.
@@ -31,12 +29,12 @@ During independent study, compare each command's actual result with its expected
 
 You can identify the kernel, distribution, architecture, current account, and workspace. You can read your saved baseline after leaving and returning to its directory. You can explain what your checks establish and what they do not prove. Complete the projects, knowledge checks, and independent assessment before moving on.
 
-## Validation and evidence
+## Evidence
 
-These materials have had command and file-persistence checks in an isolated Ubuntu 24.04.3 LTS container running as root, with Bash and GNU utilities. vi saving was checked in noninteractive Ex mode. The full regular-user lab path, interactive editing, WSL, and other distributions have not been verified by those checks. Your lab requires a regular user, so verify your own results rather than treating author checks as your completion.
+Keep your actual command results and saved files. Use the [evidence checklist](08%20Evidence/README.md) to distinguish observed results from examples and to review sensitive details before sharing.
 
-The images are teaching diagrams, not fabricated terminal screenshots. Your screenshots and output must come from your actual run. Keep raw identity and system details private.
+The images explain the concepts. Retain your own terminal output and screenshots as evidence of your practical work.
 
-Day 02 is planned and will be published after review of this lesson. There is no previous day.
+Next topic: files, paths, and your project workspace.
 
 [Linux](../README.md) · [Course home](../../README.md)

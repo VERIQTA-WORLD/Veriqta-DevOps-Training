@@ -10,7 +10,7 @@ Try these before reading the answers. You may use the command reference to confi
 2. Your prompt ends with `$`, but `id -u` prints `0`. Which evidence determines whether to pause?
 3. You create a directory and receive no output. What separate check would establish where you are working before writing a file?
 4. What does `.` select in `df -h .`? Does that report every disk's free space?
-5. Why are there double quotes around `"$HOME/veriqta-devops-labs/day-01"`?
+5. Why are there double quotes around `"$HOME/veriqta-devops-labs/linux/day-01"`?
 6. You see text inside vi and close the terminal without saving. Is a file on disk guaranteed to contain those edits?
 7. You reopen the baseline successfully. What does that prove, and what does it not prove about an application?
 8. Why should a baseline include its capture time and timezone offset?

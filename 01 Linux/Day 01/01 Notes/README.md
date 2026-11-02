@@ -16,7 +16,7 @@ You need Bash, vi, `/etc/os-release`, and common utilities including uname, id, 
 
 If you have no Linux environment or a required tool is unavailable, stop and record your operating system and exact error. Request an environment-specific setup step. Do not run an unreviewed remote installation script.
 
-Keep your practice under `$HOME/veriqta-devops-labs/day-01/`, outside any repository checkout. `$HOME` already identifies your home directory; do not reassign it. Keep raw screenshots and system details private. You can study this lesson on GitHub without cloning the repository.
+Keep your practice under `$HOME/veriqta-devops-labs/linux/day-01/`, outside any repository checkout. `$HOME` already identifies your home directory; do not reassign it. Keep raw screenshots and system details private. You can study this lesson on GitHub without cloning the repository.
 
 ## Inspect before you change
 
@@ -54,9 +54,9 @@ Read `PRETTY_NAME` in `/etc/os-release` for a human-readable distribution name. 
 
 ## Paths and your home directory
 
-An absolute path starts with `/`, such as `/home/learner/veriqta-devops-labs/day-01`. A relative path is interpreted from your current directory, such as `baseline.md`. The special path `.` means the current directory.
+An absolute path starts with `/`, such as `/home/learner/veriqta-devops-labs/linux/day-01`. A relative path is interpreted from your current directory, such as `baseline.md`. The special path `.` means the current directory.
 
-`$HOME` expands to your home directory in Bash. Do not set it to a course folder. Double quotes in `"$HOME/veriqta-devops-labs/day-01"` keep the expanded path together if it contains spaces. The quote characters are not part of the directory name.
+`$HOME` expands to your home directory in Bash. Do not set it to a course folder. Double quotes in `"$HOME/veriqta-devops-labs/linux/day-01"` keep the expanded path together if it contains spaces. The quote characters are not part of the directory name.
 
 `mkdir -p` creates missing parent directories and accepts a directory that already exists. It does not erase existing files. `cd` changes the current shell's directory. `pwd` shows the resulting location. Check that location before creating or changing files.
 
@@ -104,8 +104,6 @@ Opening vi is not the same as saving a file. After leaving the editor, read the 
 ## What you are not concluding yet
 
 You have not proved service health, production readiness, security hardening, or spare capacity. You have not established the virtualization type from the kernel name. You have established a useful, inspectable starting point for the next lessons.
-
-[Guided lab](../02%20Follow%20Along%20Lab/README.md) · [Lesson overview](../README.md)
 
 ## Official references
 

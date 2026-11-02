@@ -31,10 +31,10 @@ Save the file and independently verify its contents. Keep personal account detai
 | Accurate record | Your recorded environment values match actual command output. |
 | Saved result | You read both files from the shell after leaving the editor. |
 | Reasoning | You distinguish kernel, distribution, filesystem space, and application health without unsupported claims. |
-| Continuity | Your next action is specific and does not pretend an unpublished lesson is already complete. |
+| Continuity | Your next action identifies a concrete skill to practice or a gap to resolve. |
 
 All criteria must be met for completion. A failure is a checkpoint to repair, not a reason to restart the course. Use [troubleshooting](../06%20Troubleshooting/README.md) and the [evidence checklist](../08%20Evidence/README.md).
 
-No full solution is included in this task. During guided study, review your actual output with your instructor before moving to dependent work.
+Use the pass criteria to evaluate your actual results. If a criterion is not met, resolve that specific gap and repeat the relevant check before continuing.
 
 [Lesson overview](../README.md)
