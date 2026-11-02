@@ -1,0 +1,26 @@
+# Private configuration and operational state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfplan
+kubeconfig
+kubeconfig.*
+
+# Local learner output belongs outside the course checkout
+learner-output/
+local-evidence/
+
+# Runtime and editor output
+__pycache__/
+*.pyc
+.venv/
+*.swp
+*.swo
+.DS_Store
+
+# Ignore rules are a convenience, not a secret scanner or access control.
